@@ -18,7 +18,7 @@ public class Login_page extends Base {
 		return driver.findElement(rememberMe);
 	}
 	public Register_Page register() {
-		driver.findElement(register).click();;
+		driver.findElement(register).click();
 		Register_Page r = new Register_Page(driver);
 		return r;
 		
