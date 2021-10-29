@@ -44,7 +44,47 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
 </dependency>
+<dependency>
+    <groupId>org.jbehave</groupId>
+    <artifactId>jbehave-core</artifactId>
+    <version>4.8.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core -->
+<dependency>
+    <groupId>net.serenity-bdd</groupId>
+    <artifactId>serenity-core</artifactId>
+    <version>3.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-jbehave -->
+<dependency>
+    <groupId>net.serenity-bdd</groupId>
+    <artifactId>serenity-jbehave</artifactId>
+    <version>1.46.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>7.0.0</version>
+</dependency>
+
   </dependencies>
+<!-- https://mvnrepository.com/artifact/org.jbehave/jbehave-core -->
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
