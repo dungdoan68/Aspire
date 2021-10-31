@@ -42,6 +42,7 @@ public class Data extends Base {
 			r.skip().click();
 			r.btnContinue();
 			System.out.println("Continue to verify b OTP");
+			System.out.println("Continue to verify b OTP from master");
 	}
 
 	private static String getSug(WebElement s) {
