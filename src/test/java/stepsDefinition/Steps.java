@@ -29,7 +29,7 @@ public class Steps extends Base {
 	@When("Customer click on dont have account")
 	public void customer_click_on_dont_have_account() throws InterruptedException {
 		Thread.sleep(5000);
-	    data.addCustomer(r,"Viet","f");
+	    data.addCustomer(r,"Viet",3);
 	}
 	@Then("They go and input all detail needed to create account")
 	public void they_go_and_input_all_detail_needed_to_create_account() {
