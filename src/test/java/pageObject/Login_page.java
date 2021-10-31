@@ -14,7 +14,10 @@ public class Login_page extends Base {
 	
 	By userName = By.xpath("//input[@name='username']");
 	By rememberMe = By.xpath("//*[name()='svg']");
+
 	By register = By.xpath("//span[contains(text(),'Reg')]");
+
+
 	By btnNext = By.xpath("//span[contains(text(),'Next')]");
 	
 	public WebElement userName() {

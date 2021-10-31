@@ -13,6 +13,7 @@ public class Register_Page extends Base{
 		this.driver = driver;
 	}
 	
+
 	By fullName = By.xpath("//input[@name='full_name']");
 	By preferred =  By.xpath("//input[@name='preferred_name']");
 	By email = By.xpath("//input[@name='email']");
@@ -25,6 +26,7 @@ public class Register_Page extends Base{
 	By btnContinue = By.xpath("//span[contains(text(),'Con')]");
 	By loginPage = By.xpath("//span[contains(text(),'Login')]");
 	By skip = By.xpath("//span[contains(text(),'Skip')]");
+
 	By iframe = By.xpath("//fc_widget");
 	
 	public WebElement fullName() {
