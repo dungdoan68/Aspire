@@ -11,6 +11,7 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/java/resources/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(Utils.getStringValue("baseURL"));
+		driver.manage().window().maximize();
 		return driver;
 	}
 }
