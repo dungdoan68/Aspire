@@ -2,11 +2,13 @@ package pageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 
 import resources.Base;
 
 public class VerifyOTP_Page extends Base{
+
 	public VerifyOTP_Page(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -19,4 +21,5 @@ public class VerifyOTP_Page extends Base{
 	public WebElement resendOTP() {
 		return driver.findElement(resendOTP);
 	}
+
 }
