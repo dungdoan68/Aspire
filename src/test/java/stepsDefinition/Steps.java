@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObject.Login_page;
 import pageObject.Register_Page;
+import pageObject.VerifyOTP_Page;
 import pojo.Data;
 
 import resources.Base;
@@ -17,6 +18,7 @@ public class Steps extends Base {
 	WebDriver driver;
 	Login_page l;
 	Register_Page r;
+	VerifyOTP_Page v;
 
 	Data data ;
 	@Given("Customer navigave to the website without account")
@@ -31,11 +33,26 @@ public class Steps extends Base {
 	@When("Customer click on dont have account")
 	public void customer_click_on_dont_have_account() throws InterruptedException {
 		Thread.sleep(5000);
-	    data.addCustomer(r,"Viet",3);
+	    data.addCustomer(r,"Viet","Ins");
+	    Thread.sleep(3000);
+	    //v =r.btnContinue(); 
 
 	}
 	@Then("They go and input all detail needed to create account")
 	public void they_go_and_input_all_detail_needed_to_create_account() {
 	    
+	}
+	
+	@Given("Customer navigave to the OTP verify page")
+	public void customer_navigave_to_the_otp_verify_page() {
+	    
+	}
+	@When("Customer click and input <{int}> <{int}><{int}><{int}>")
+	public void customer_click_and_input(Integer int1, Integer int2, Integer int3, Integer int4) {
+		data.verifyOTP_();
+	}
+	@Then("they will landing to successfull page")
+	public void they_will_landing_to_successfull_page() {
+	  
 	}
 }
