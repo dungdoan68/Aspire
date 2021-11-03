@@ -1,0 +1,8 @@
+pageObject\VerifyOTP_Page.class
+pageObject\Chatbox_page.class
+pojo\Data.class
+pageObject\Login_page.class
+BankTranfer\Aspire\AppTest.class
+resources\Base.class
+resources\Utils.class
+pageObject\Register_Page.class

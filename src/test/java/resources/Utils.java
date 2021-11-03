@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.jruby.RubyProcess.Sys;
+
 
 public class Utils {
 	public static String getStringValue(String value) throws IOException {
