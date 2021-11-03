@@ -25,9 +25,7 @@ public class Steps extends Base {
 	public void customer_navigave_to_the_website_without_account() throws IOException, InterruptedException {
 		driver = initBrowser();
 		l= new Login_page(driver);
-		//l.btnNext().click();
-		//l.userName().sendKeys("jjjdjdjd");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		r=l.register();
 	}
 	@When("Customer click on dont have account")
@@ -49,7 +47,7 @@ public class Steps extends Base {
 	}
 	@When("Customer click and input <{int}> <{int}><{int}><{int}>")
 	public void customer_click_and_input(Integer int1, Integer int2, Integer int3, Integer int4) {
-		data.verifyOTP_();
+		data.verifyOTP_(1);
 	}
 	@Then("they will landing to successfull page")
 	public void they_will_landing_to_successfull_page() {

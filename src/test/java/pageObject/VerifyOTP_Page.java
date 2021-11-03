@@ -11,7 +11,7 @@ public class VerifyOTP_Page extends Base{
 		this.driver = driver;
 	}
 	
-	By verifyOTP = By.xpath("//div[@class='digit-input aspire-field']//div");
+	By verifyOTP = By.xpath("//div[@class='digit-input aspire-field']/div");
 	By resendOTP = By.xpath("//span[contains(text(),'Res')]");
 	public WebElement verifyOTP() {
 		return driver.findElement(verifyOTP);

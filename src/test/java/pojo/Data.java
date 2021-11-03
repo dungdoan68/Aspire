@@ -63,23 +63,15 @@ public class Data{
 		return a;
 	}
 
-	public static void verifyOTP_() {
+	public static void verifyOTP_(int d) {
 		//a.resendOTP().click();
 		a.verifyOTP().click();
 		//.findElement(By.xpath("//div[@class='digit-input aspire-field']//div//div[1]")).sendKeys("1");
 		List<WebElement> b= a.verifyOTP().findElements(By.xpath("//div[@class='digit-input aspire-field']//div//div"));
 		System.out.println(b.size());
 		for(int i=0; i<b.size();i++) {
-			String c =b.get(i).getText();
-			System.out.println("Element asddf: ");
-			System.out.println(c);
-			
+						
 		}
-		a.verifyOTP().findElement(By.xpath("//div[@class='digit-input__input flex flex-center text-weight-medium cursor-pointer'][2]")).sendKeys(Keys.NUMPAD1);
-		/*
-		 * a.verifyOTP().findElement(By.xpath("//div[2]")).sendKeys("2");
-		 * a.verifyOTP().findElement(By.xpath("//div[3]")).sendKeys("3");
-		 * a.verifyOTP().findElement(By.xpath("//div[4]")).sendKeys("4");
-		 */
+		a.verifyOTP().findElement(By.xpath("//div[@class='digit-input aspire-field']//div//div[1]")).sendKeys(Keys.NUMPAD1);
 	}
 }
