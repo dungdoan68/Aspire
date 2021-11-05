@@ -45,9 +45,9 @@ public class Steps extends Base {
 	public void customer_navigave_to_the_otp_verify_page() {
 	    
 	}
-	@When("Customer click and input <{int}> <{int}><{int}><{int}>")
-	public void customer_click_and_input(Integer int1, Integer int2, Integer int3, Integer int4) {
-		data.verifyOTP_(1);
+	@When("Customer click and input <{string}> <{string}><{string}><{string}>")
+	public void customer_click_and_input(String int1, String int2, String int3, String int4) {
+		data.verifyOTP_(int1, int2,int3,int4);
 	}
 	@Then("they will landing to successfull page")
 	public void they_will_landing_to_successfull_page() {

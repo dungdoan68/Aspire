@@ -8,12 +8,13 @@ import java.util.stream.Collectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import pageObject.Register_Page;
 import pageObject.VerifyOTP_Page;
 import resources.Base;
 
-public class Data{
+public class Data extends Base{
 	static VerifyOTP_Page a;
 	public static VerifyOTP_Page addCustomer(Register_Page r, String country, String suggestnu) throws InterruptedException {
 		r.fullName().sendKeys("Test1");
@@ -63,15 +64,24 @@ public class Data{
 		return a;
 	}
 
-	public static void verifyOTP_(int d) {
-		//a.resendOTP().click();
-		a.verifyOTP().click();
-		//.findElement(By.xpath("//div[@class='digit-input aspire-field']//div//div[1]")).sendKeys("1");
+	public static void verifyOTP_(String e, String f,String c, String d) {
+	
 		List<WebElement> b= a.verifyOTP().findElements(By.xpath("//div[@class='digit-input aspire-field']//div//div"));
 		System.out.println(b.size());
+		Actions s = new Actions(driver);
+		
 		for(int i=0; i<b.size();i++) {
-						
+			if(i==0) {
+				s.moveToElement(a.verifyOTP()).sendKeys(e).build().perform();	
+			}
+			if(i==1)
+				s.moveToElement(a.verifyOTP()).sendKeys(f).build().perform();	
+			if(i==2)
+				s.moveToElement(a.verifyOTP()).sendKeys(c).build().perform();
+			if(i==3)
+				s.moveToElement(a.verifyOTP()).sendKeys(d).build().perform();	
+				
 		}
-		a.verifyOTP().findElement(By.xpath("//div[@class='digit-input aspire-field']//div//div[1]")).sendKeys(Keys.NUMPAD1);
+		//body.desktop.no-touch.body--light:nth-child(2) div.q-layout.q-layout--standard div.q-page-container main.q-page.aspire-page div.auth-form__card form.q-form.verify-otp-form.text-center div.verify-otp-form__input.flex.flex-center div.digit-input.aspire-field div.digit-input__box.flex.justify-between.no-wrap > div.digit-input__input.flex.flex-center.text-weight-medium.cursor-pointer:nth-child(2)
 	}
 }
